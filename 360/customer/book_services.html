@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style/dope.css">
+    <title>Book Services - 360 Delivery</title>
+    <style>
+        header {
+            background-color: #050B17;
+        }
+
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Use min-height to ensure the content is centered even if it's shorter than the viewport */
+            background-color: #f5f5f5;
+        }
+        .service-input {
+            width: 100%;
+        }
+
+        .row-services {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        fieldset {
+            flex: 1;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        legend {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        select, input, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        .service-form {
+            width: 90%; /* Adjust the width as needed */
+            max-width: 800px; /* Adjust the maximum width as needed */
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            margin-right: 20px; /* Add margin to create space between the form and the button */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="image/logo.jpg" alt="360 logo"></div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="book_services.html">Book Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+        </nav>
+        <a href="contact us.html"><button>Contact Us</button></a>
+    </header>
+
+    <main>
+        
+<section>
+    <div class="service-form">
+        <form action="booking.php" method="POST">
+            <div class="service-input">
+                <h1>Continue <span>Your Order</span></h1>
+                <div class="row-services">
+                    <fieldset>
+                            <legend>Your Name*</legend>
+                            <input type="text" placeholder="Name" name="name">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Your Matric Number*</legend>
+                            <input type="text" placeholder="Matric Number" name="matric">
+                        </fieldset>
+                    </div>
+                    <div class="row-services">
+                        <fieldset>
+                            <legend>Your Email*</legend>
+                            <input type="text" placeholder="Email" name="email">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Your Contact Number*</legend>
+                            <input type="text" placeholder="0112345678" name="contact">
+                        </fieldset>
+                    </div>
+                    <div class="row-services">
+                    <fieldset>
+                        <legend>Your Pick Up Point*</legend>
+                        <select style="padding: 5px 70px 5px 20px;" name="pickup">
+                            <option value="Select Your Pick Up Point" disabled selected>Select Your Pick Up Point</option>
+                            <option value="HEPA">HEPA</option>
+                            <option value="Allamanda Parcel N' Go">Allamanda Parcel N' Go</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your Drop Point*</legend>
+                        <select style="padding: 5px 70px 5px 20px;" name="drop">
+                            <option value="Select Your Drop Point" disabled selected>Select Your Drop Point</option>
+                            <option value="Allamanda College">Allamanda College</option>
+                            <option value="Bunga Raya College">Bunga Raya College</option>
+                            <option value="Cempaka College">Cempaka College</option>
+                            <option value="Dahlia College">Dahlia College</option>
+                            <option value="Sakura College">Sakura College</option>
+                            <option value="Taz College">Taz College</option>
+                        </select>
+                    </fieldset>
+                    </div>
+                    <div class="row-services">
+                    <fieldset>
+                        <legend>Your Courier*</legend>
+                        <input type="text" placeholder="JNT,Shoppee Express" name="courier">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tracking Number*</legend>
+                        <input type="text" placeholder="smg0011" name="tracking_num">
+                    </fieldset>
+                    </div>
+                <div class="row-services">
+                    <fieldset>
+                        <legend>Date Parcel Arrived*</legend>
+                        <input style="width: 100%;" type="date" placeholder="Enter Date" name="date">
+                    </fieldset>
+                </div>
+                <div class="row-services">
+                    <fieldset class="select-file">
+                        <legend>Parcel Image*</legend>
+                        <input type="file" name="img">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Parcel Amount*</legend>
+                        <input type="text" name="amount">
+                    </fieldset>
+                <div class="row-services">
+                    <fieldset>
+                        <legend>Order Notes</legend>
+                        <textarea style="padding: 10px; margin-bottom: 20px;" placeholder="Leave Your Notes Here..." name="notes"></textarea>
+                    </fieldset>
+                </div>
+                </div>
+                <button type="submit" name="booking" style="background-color: #4CAF50; /* Green */
+                                       border: none;
+                                       color: white;
+                                       padding: 10px 20px;
+                                       text-align: center;
+                                       text-decoration: none;
+                                       display: inline-block;
+                                       font-size: 16px;
+                                       margin: 4px 2px;
+                                       cursor: pointer;
+                                       border-radius: 4px;">Submit</button>
+
+             </form>
+            </div>
+        </form>
+    </div>
+    </section>
+        <footer>
+        <div class="logo-container"><img class="logo-footer" src="image/logo.jpg" alt="Footer Logo"></div>
+        <div class="quick-links-container">
+            <span>Quick Links</span>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="book services.html">Book Services</a></li>
+            </ul>
+        </div>
+        <div class="operating-hours-container">
+            <span>Operating Hours</span>
+            <div>Monday - Friday (9am to 5pm)</div>
+            <div>Saturday & Sunday (Closed)</div>
+        </div>
+        <div class="socmed-container">
+            <div>
+                <a href="https://www.instagram.com/360delivery23/" target="_blank" class="socmed-link"><img src="icons/ig.svg" alt="Instagram"></a>
+                <a href="https://api.whatsapp.com/send?phone=60195359621" target="_blank">
+                <img src="icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        © Copyright ©2023 All rights reserved | 360 Delivery
+    </div>
+    </body>
+    </html>

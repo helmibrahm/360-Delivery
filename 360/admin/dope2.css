@@ -1,0 +1,400 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    background-color: #F1F4F5;
+}
+
+nav {
+    height: 100vh;
+    width: 250px;
+    background-color: #050B17;
+    position: fixed;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+nav img {
+    margin: 0 0 10px 20px;
+    object-fit: cover;
+    width: 45px;
+    filter: grayscale(100%);
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+.admin-btn {
+    margin: 0 40px;
+    padding: 8px 25px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    border: solid 1px #42BDEC;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.admin-btn:hover {
+    background-color: #42BDEC;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    position: relative;
+}
+
+li a {
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    transition: 0.5s;
+}
+
+li a:focus,
+li a:hover,
+li a:active {
+    color: #42BDEC; /* Change the color to your desired active color */
+}
+
+li.active a {
+    color: #42BDEC; /* Change the color to your desired active color */
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+    display: none;
+}
+
+/* Gradient Background Styles */
+.gradient-section {
+    position: absolute;
+    height: 150px;
+    top: 0;
+    left: 250px;
+    right: 0;
+    background: linear-gradient(
+        to bottom right,
+        hsla(202.12, 100%, 50%, 0.3) 0%,
+        hsla(200.81, 90.76%, 51.89%, 0.304) 6.7%,
+        hsla(199.14, 81.2%, 53.69%, 0.308) 12.7%,
+        hsla(196.94, 71.29%, 55.43%, 0.312) 18.3%,
+        hsla(193.9, 61.01%, 57.09%, 0.315) 23.5%,
+        hsla(189.42, 50.3%, 58.7%, 0.319) 28.6%,
+        hsla(182.12, 39.13%, 60.26%, 0.322) 33.6%,
+        hsla(170.07, 34.75%, 63.84%, 0.326) 38.7%,
+        hsla(152.68, 31.73%, 67.87%, 0.329) 44.1%,
+        hsla(125.57, 27.94%, 71.81%, 0.332) 49.8%,
+        hsla(95.01, 33.89%, 71.68%, 0.335) 56.1%,
+        hsla(76.77, 41.19%, 70.82%, 0.338) 63%,
+        hsla(64.74, 48.01%, 69.98%, 0.341) 70.7%,
+        hsla(56.41, 59.96%, 70.2%, 0.344) 79.3%,
+        hsla(51.25, 78.97%, 71.57%, 0.347) 89.1%,
+        hsla(47.83, 100%, 72.94%, 0.35) 100%
+    );
+}
+
+section {
+    position: relative;
+    display: flex;
+    left: 350px;
+    top: 60px;
+}
+
+/* Box Styles */
+.box1,
+.box2 {
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    width: 250px;
+    height: fit-content;
+    border-radius: 10px;
+    margin-right: 70px;
+    gap: 15px 0;
+    padding-left: 30px;
+}
+
+.total-order,
+.order-completed {
+    font-weight: 600;
+}
+
+.number-of-total-order {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.order-completed span {
+    color: #666;
+    font-weight: 400;
+}
+
+/* Table Styles */
+.team-table {
+    position: absolute;
+    top: 50px; /* Adjust the top position based on your preference */
+    width: 1000px; /* Set the fixed width for the table */
+    background-color: white;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.team-table table {
+    width: 100%; /* Make the table take up 100% of its container */
+    border-collapse: collapse;
+}
+
+.team-table th, td {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.team-table th {
+    background-color: #F1F5F9;
+    color: black;
+    padding: 10px 0;
+}
+
+.team-table th, td, h3 {
+    padding-left: 25px;
+}
+
+.email {
+    font-size: 12px;
+    color: #666;
+}
+
+.section2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 350px;
+    top: 10px;
+}
+
+section h1 {
+    color: #42BDEC;
+}
+
+.select-file {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: solid 1px gainsboro;
+    border-radius: 5px;
+}
+
+.file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.933);
+    border-radius: 5px;
+    border: none;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+legend,
+.new-services-input {
+    font-size: 20px;
+}
+
+.new-services-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.new-services-input input {
+    margin-top: 5px;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: solid 1px gainsboro;
+}
+
+.new-service-div {
+    border: solid 1px gainsboro;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.new-service-div button {
+    margin-top: 20px;
+    padding: 10px 10px;
+    translate: 365%;
+    border-radius: 5px;
+    border: none;
+    background-color: #42BDEC;
+    cursor: pointer;
+}
+
+.new-service-div button:hover {
+    color: white
+}
+
+.edit-services-table,
+.view-order-table,
+.order-history-table,
+.sales-summary-table,
+.inquiry-table  {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.edit-services-table table,
+.view-order-table table,
+.order-history-table table,
+.sales-summary-table table,
+.inquiry-table table {
+    width: 1000px;
+    border-collapse: collapse; /* Collapse the table borders */
+}
+
+.edit-services-table th:nth-child(1),
+.edit-services-table td:nth-child(1) {
+    width: 450px; /* Set the width as desired */
+}
+
+.edit-services-table th:nth-child(2),
+.edit-services-table td:nth-child(2) {
+    width: 450px; /* Set the width as desired */
+}
+
+.edit-services-table th:nth-child(3),
+.edit-services-table td:nth-child(3) {
+    width: 80px; /* Set the width as desired */
+}
+
+
+.edit-services-table th,
+.edit-services-table td {
+    text-align: left;
+    padding: 15px; /* Adjust the padding according to your preference */
+    border: 1px solid #d0d0d04b;
+}
+
+.edit-services-table th {
+    background-color: #F1F5F9;
+    color: black;
+}
+
+.edit-services-table h3 {
+    color: #42BDEC;
+    padding-left: 15px; /* Match the padding of th and td for consistency */
+}
+
+.add_button,
+.delete-button,
+.complete-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items vertically center */
+    margin-right: 10px; /* Add margin to separate the buttons and icons */
+    padding: 3px 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.edit-icon,
+.delete-icon,
+.right-icon {
+    width: 15px;
+    height: 15px; /* Set the height to maintain the aspect ratio */
+    object-fit: contain;
+    margin-right: 5px; /* Add margin to separate the icons and text */
+}
+
+.add-button {
+    background-color: #008000;
+    padding-right: 25px;
+    margin-bottom: 2px;
+}
+
+.delete-button {
+    background-color: #D97706;
+}
+
+.delete-button:hover {
+    background-color: #FFA533; /* Change to a different color on hover */
+}
+
+.complete-button {
+    background-color: green;
+}
+
+.text-middle {
+    vertical-align: middle;
+    text-align: justify;
+}
+
+.edit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items vertically center */
+    margin-right: 10px; /* Add margin to separate the buttons and icons */
+    background-color: #008000;
+    color: white;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none; /* Add this line to remove underline from anchor */
+}
+
+.edit-button:hover {
+    background-color: #006400; /* Change the color when hovered */
+}
+
+.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
