@@ -26,7 +26,7 @@
 
         .inquiry-table th {
             background-color: #F1F5F9;
-             width: 50px;
+            width: 50px;
         }
 
         .inquiry-table th:nth-child(2),
