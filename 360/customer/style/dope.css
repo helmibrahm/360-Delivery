@@ -386,7 +386,8 @@ hr {
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
     outline: none;
     border: solid 1px #737373;
 }
